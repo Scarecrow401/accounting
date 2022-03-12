@@ -1,0 +1,52 @@
+// global colors
+$accentColor: #306fb2;
+$acceptBackground: #63c67c29;
+$alertBackground: #eb575726;
+$alertBackgroundColor: #eb57571a;
+$alertColor: #eb5757;
+$alertPaleColor: #ffb4b4;
+$backgroundColor: #f9fafb;
+$beigeColor: #d5d9de;
+$bgGreen: #27ae60;
+$bgOrange: #f06806;
+$bgRed: #bc2947;
+$bgYellow: #dbc605;
+$blackColor: #000000;
+$borderColor: #dee2e6;
+$darkBlueColor: #0f263f;
+$darkRedColor: #bc2947;
+$disabledColor: #c4c4c4;
+$greenColor: #63c67c;
+$greenPaleColor: #27ae6059;
+$greyColor: #f5f5f5;
+$lightLightBlueColor: #f0f3f7;
+$orangeColor: #ff5c00;
+$orangeLightColor: #f8a400;
+$paleBlueColor: #8697aa;
+$selectedColor: #c0d7f1;
+$someNewActiveColor: #a6d1f5;
+$someNewColor: #d6e2f0;
+$whiteColor: #ffffff;
+$yellowColor: #f2c94c;
+$yellowPaleColor: #f8fab0;
+
+$agreedColor: #27ae60;
+$declineColor: #bc2947;
+
+$invalidBgColor: #fbf2f4;
+
+.empty {
+  height: 100%;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__message {
+    font-size: 20px;
+  }
+}

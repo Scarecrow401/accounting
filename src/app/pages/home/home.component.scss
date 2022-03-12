@@ -1,0 +1,13 @@
+@import 'src/assets/scss/mixins.scss';
+
+:host {
+  @include _flex-col;
+}
+
+.home {
+  @include _flex-col;
+
+  &__container {
+    @include _flex-col;
+  }
+}

@@ -1,0 +1,40 @@
+<small class="select__title" [class.required]="required" *ngIf="title">{{title}}</small>
+<ng-container *ngIf="!multiSelect">
+  <span class="defaultPlaceholder" *ngIf="defaultStyle">{{placeholder}}</span>
+  <p-dropdown
+    (ngModelChange)="onValueChange($event)"
+    [(ngModel)]="value"
+    [appendTo]="appendTo"
+    [class.default]="defaultStyle"
+    [disabled]="disabled"
+    [emptyFilterMessage]="emptyFilterMessage"
+    [emptyFilterMessage]="emptyMessage"
+    [filter]="filter"
+    [options]="items"
+    [panelStyle]="panelStyle"
+    [placeholder]="placeholder"
+    [required]="required"
+    [showClear]="clearable"
+    [style]="style"
+    dataKey="id"
+    optionLabel="name"
+  ></p-dropdown>
+</ng-container>
+<ng-container *ngIf="multiSelect">
+  <p-multiSelect
+    (ngModelChange)="onValueChange($event)"
+    [appendTo]="appendTo"
+    [defaultLabel]="placeholder"
+    [disabled]="disabled"
+    [emptyFilterMessage]="emptyFilterMessage"
+    [filter]="filter"
+    [ngModel]="value"
+    [options]="items"
+    [selectedItemsLabel]="selectedItemsLabel"
+    [showHeader]="showHeader"
+    [showToggleAll]="showToggleAll"
+    [virtualScroll]="virtualScroll"
+    dataKey="id"
+    optionLabel="name"
+  ></p-multiSelect>
+</ng-container>

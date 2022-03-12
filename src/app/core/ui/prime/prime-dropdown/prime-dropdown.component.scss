@@ -1,0 +1,123 @@
+@import 'src/assets/scss/globals.scss';
+
+:host {
+  width: 100%;
+}
+
+p-multiSelect::ng-deep {
+  position: relative;
+
+  .ui-multiselect {
+    min-width: 12.5em;
+    width: 100%;
+    border-color: $accentColor;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: $selectedColor;
+    }
+  }
+
+  .ui-multiselect-trigger {
+    color: $accentColor;
+  }
+
+  .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item.ui-state-highlight {
+    background-color: $accentColor !important;
+  }
+
+  .ui-state-focus {
+    box-shadow: 0 0 0 0.2em $selectedColor !important;
+  }
+
+  .ui-chkbox .ui-chkbox-box.ui-state-active {
+    background-color: #fff;
+    border-color: $selectedColor;
+    color: $accentColor;
+  }
+
+  .ui-multiselect-panel .ui-multiselect-items .ui-multiselect-item:focus {
+    box-shadow: inset 0 0 0 0.2em $selectedColor;
+  }
+
+  .ui-multiselect-panel .ui-multiselect-header .ui-multiselect-filter-container .ui-multiselect-filter-icon {
+    color: $accentColor;
+  }
+}
+
+.select__title {
+  display: block;
+}
+
+.defaultTitle {
+  position: absolute;
+  display: block;
+  align-items: center;
+  padding-left: 1.5rem;
+  pointer-events: none;
+  padding-top: 0.4rem;
+  font-size: 14px;
+  color: #8697aa;
+  z-index: 1;
+  transition: all 0.2s;
+
+  &::after {
+    content: '*';
+    color: $alertColor;
+  }
+}
+
+.defaultPlaceholder {
+  position: absolute;
+  align-items: center;
+  padding-left: 1.5rem;
+  pointer-events: none;
+  padding-top: 0.4rem;
+  font-size: 14px;
+  color: #8697aa;
+  z-index: 1;
+  transition: all 0.2s;
+
+  &::after {
+    content: '*';
+    color: $alertColor;
+  }
+}
+
+.default::ng-deep {
+  position: relative;
+
+  .ui-dropdown {
+    height: 4rem;
+    background-color: #f0f3f7;
+
+    &:hover {
+      border-color: $accentColor;
+    }
+  }
+
+  .ui-dropdown-label-container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .ui-dropdown-label {
+    background-color: #f0f3f7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 1.5rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+    margin-bottom: 4px;
+    outline: none;
+    color: $darkBlueColor;
+    border-radius: 5px;
+    font-size: 15.4px;
+    line-height: 23px;
+  }
+
+  .ui-dropdown-trigger {
+    background-color: #f0f3f7;
+  }
+}

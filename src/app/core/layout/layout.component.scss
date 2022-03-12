@@ -1,0 +1,44 @@
+@import 'src/assets/scss/mixins.scss';
+
+:host {
+  @include _flex-col;
+  min-height: 100%;
+
+  @include media-tablet() {
+    flex-direction: row;
+  }
+
+  @include media-web() {
+    flex-direction: column;
+  }
+}
+
+main {
+  @include _flex-col;
+  flex-grow: 1;
+
+  & > * {
+    width: 100%;
+  }
+
+  &.tablet {
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  &.handset {
+    overflow-y: auto;
+    height: calc(100vh - 8rem);
+  }
+
+  app-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+app-header,
+app-footer,
+app-sidebar {
+  flex-shrink: 0;
+}
