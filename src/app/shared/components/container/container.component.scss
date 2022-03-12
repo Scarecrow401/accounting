@@ -12,15 +12,7 @@
     @include _flex-row;
   }
 
-  &__sidebar {
-    @include _flex-col;
-    width: 350px;
-    padding: 16px;
-    background-color: $accentColor;
-  }
-
   &__content {
     @include _flex-col;
-    padding: 16px;
   }
 }

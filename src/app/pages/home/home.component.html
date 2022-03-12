@@ -1,16 +1,22 @@
 <div class="home">
   <div class="home__container">
     <div class="home__items">
-      <div class="home__item">
+      <div class="home__item" *ngFor="let item of items">
         <div class="home__category">
-          <span class="home__text">Категории</span>
-          <p-dropdown [options]="categories" [(ngModel)]="selectedCategory" optionLabel="name"></p-dropdown>
+          <span class="home__text">Категория</span>
+          <p-dropdown [options]="categories" [(ngModel)]="item.selectedCategory" optionLabel="name"></p-dropdown>
         </div>
         <div class="home__value">
           <span class="home__text">Стоимость</span>
-          <p-inputNumber [(ngModel)]="cost" mode="currency" currency="Rub" locale="ru-RU"></p-inputNumber>
+          <p-inputNumber [(ngModel)]="item.cost" mode="currency" currency="Rub" locale="ru-RU"></p-inputNumber>
         </div>
       </div>
+    </div>
+    <div class="home__total">
+      <span class="home__text">Общие затраты <b>{{total}} руб.</b></span>
+    </div>
+    <div class="home__balance">
+      <span class="home__text">При текущих тратах с учетом зарплаты {{salary}} руб. остаток составляет <b>{{balance}} руб.</b></span>
     </div>
   </div>
 </div>
