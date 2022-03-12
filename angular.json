@@ -28,7 +28,7 @@
               "src/styles.scss",
               "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
@@ -88,13 +88,7 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "./node_modules/primeicons/primeicons.css",
-              "./node_modules/primeng/resources/themes/nova-light/theme.css",
-              "./node_modules/primeng/resources/primeng.min.css",
-              "src/styles.scss"
-            ],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css", "src/styles.scss"],
             "scripts": []
           }
         },

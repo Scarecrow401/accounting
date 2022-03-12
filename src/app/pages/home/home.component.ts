@@ -6,19 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  cities;
+  public categories = [
+    { id: 0, name: 'Образование' },
+    { id: 1, name: 'Еда' },
+    { id: 2, name: 'Такси' },
+    { id: 3, name: 'Прочее' },
+  ];
 
-  selectedCity;
+  selectedCategory;
+  cost;
 
-  constructor() {
-    this.cities = [
-      { name: 'New York', code: 'NY' },
-      { name: 'Rome', code: 'RM' },
-      { name: 'London', code: 'LDN' },
-      { name: 'Istanbul', code: 'IST' },
-      { name: 'Paris', code: 'PRS' },
-    ];
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 }

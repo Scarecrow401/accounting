@@ -1,5 +1,16 @@
 <div class="home">
   <div class="home__container">
-    <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+    <div class="home__items">
+      <div class="home__item">
+        <div class="home__category">
+          <span class="home__text">Категории</span>
+          <p-dropdown [options]="categories" [(ngModel)]="selectedCategory" optionLabel="name"></p-dropdown>
+        </div>
+        <div class="home__value">
+          <span class="home__text">Стоимость</span>
+          <p-inputNumber [(ngModel)]="cost" mode="currency" currency="Rub" locale="ru-RU"></p-inputNumber>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

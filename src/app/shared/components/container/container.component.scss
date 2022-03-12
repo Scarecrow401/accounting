@@ -1,5 +1,26 @@
 @import 'src/assets/scss/mixins.scss';
+@import 'src/assets/scss/globals.scss';
 
 :host {
   @include _flex-col;
+}
+
+.content {
+  @include _flex-col;
+
+  &__container {
+    @include _flex-row;
+  }
+
+  &__sidebar {
+    @include _flex-col;
+    width: 350px;
+    padding: 16px;
+    background-color: $accentColor;
+  }
+
+  &__content {
+    @include _flex-col;
+    padding: 16px;
+  }
 }

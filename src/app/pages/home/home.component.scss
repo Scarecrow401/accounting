@@ -10,4 +10,16 @@
   &__container {
     @include _flex-col;
   }
+
+  &__item {
+    display: flex;
+  }
+
+  &__text {
+    display: block;
+  }
+
+  &__category {
+    margin-right: 8px;
+  }
 }
